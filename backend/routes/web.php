@@ -21,5 +21,4 @@ Route::get('/', function () {
 Route::get("/{any}", function () {
     return view("cms");
 })
-    ->where("any", ".*")
-    ->middleware("renewalredirect");
+    ->where("any", ".*");
