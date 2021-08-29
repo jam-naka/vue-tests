@@ -19,6 +19,6 @@ Route::get('/', function () {
 
 // Vue
 Route::get("/{any}", function () {
-    return view("cms");
+    return view("test");
 })
     ->where("any", ".*");
